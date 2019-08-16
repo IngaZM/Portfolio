@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html>
+<head>
+   <script src="https://www.google.com/recaptcha/api.js" async defer></script>
+  <link rel="stylesheet" href="
+  style.css">
+</head>
+<body>
+
+<div class="header">
+  <h1 style="font-size: 20">inga mnukwa.</h1>
+</div>
+
+<div class="topnav">
+  <a href="#Hobbies" style="float: right">Hobbies</a>
+  <a href="#Contact" style="float: right">Contact</a>
+  <a href="#Services" style="float:right">Services</a>
+  <a href="#Home" style="float: right">Home</a>
+</div>
+
+<div class="row">
+  <div class="leftcolumn">
+    <div class="card1">
+      <div id="Home">
+      <h2>Hello, I'm Inga</h2>
+      <h5>ASPIRING MOBILE DEVELOPER</h5>
+      <!-- <img src="nga.jpg" alt="Inga" width="100%" padding="20px" height="500px"> -->
+      
+      
+    </div>
+  </div>
+    <div class="card">
+      <div id="Services">
+      <h2 style="text-align: center; font-size:20px; letter-spacing: 2px">Services</h2>
+      <p style="font-size: 20px;
+      letter-spacing: 2px;
+      text-align: left;">Python</p>
+      <img src="python.jpg" alt="Python Logo" width="100" height="100" float="left" border-radius= "50%" margin-left=20em>
+      <p>Since the early days of my career, I have had a strong passion for Python and believe it is what I do best. If this is something you need, please do not hesitate to get in touch to discuss your next plan or project.</p>
+      <p style="font-size: 20px;
+      letter-spacing: 2px;
+      text-align: left;">Delphi</p>
+      <img src="delphi.png" alt="Delphi Logo" width="100" height="100" float="left" border-radius="50%" margin-left=40em>
+      <p>In high school I did Delphi.</br>Delphi is both an object oriented programming language (OOP) and an Integrated Development Environment (IDE). Published by the Embarcadero company (formerly CodeGear and more formerly Borland), Delphi is an alternative to language such as Visual Basic offering development with both rapidity and good quality.</p>
+      <p style="font-size: 20px;
+      letter-spacing: 2px;
+      text-align: left;">Java</p>
+      <img src="java.png" alt="Java Logo" width="100" height="100" float="left" border-radius="50%" margin-left=40em>
+      <p>Earlier this year I was introduced to Java. I currently know the basics but I am working forward to learning more about it.</br>Java is a general-purpose programming language that is class-based, object-oriented, and designed to have as few implementation dependencies as possible.</p>
+      <p>I am passionate about building applications and developing websites.</br>I am currently busy with my NSC Systems Development Level 5. I am now an Intern at</br>Absa in a YoungLings project.</p>   
+    </div>
+  </div>
+<div class="card">
+  <div id="Hobbies">
+    <h2 style="text-align: center; font-size:20px; letter-spacing: 2px">Hobbies</h2>
+    <p>If I am not coding, you will find me reading a book or watching documentaries.</p>
+    <p>I also enjoy:</br>-swimming</br>-playing table tennis</br>-browsing the internet</p>
+  </div>
+</div> 
+</div>
+  <div class="rightcolumn">
+    <div class="card">
+      <div id="Contact">
+      <h2 style="font-size: 20px">Contact</h2>
+      <form  id= "IngasForm" action="?" method="POST" onsubmit="return recaptcha_callback()">
+        <label for="fname">First Name</label>
+        <input type="text" id="fname" name="firstname" placeholder="Your name.." required>
+        <label for="lname">Last Name</label>
+        <input type="text" id="lname" name="lastname" placeholder="Your last name.." required>
+        <label for="country">Country</label>
+        <select id="country" name="country">
+          <option value="australia">South Africa</option>
+          <option value="canada">Canada</option>
+          <option value="usa">USA</option>
+        </select>
+        <label for="subject">Subject</label>
+        <textarea id="subject" name="subject" placeholder="Write something.." style="height:170px" required></textarea>
+        <br>
+        <div class="g-recaptcha" data-sitekey="6LcOYbEUAAAAAAqngQ2tdaZ86Fu7llgxFszXF04T" data-callback ="recaptcha_callback"></div>
+      <br/>
+        <input type="submit" value="Submit" id="submit" disabled>
+        <div class="alert">
+          MESSAGE SENT
+        </div>
+      </form>
+
+      <p style="font-size: 30px; font-family:'Times New Roman', Times, serif; text-align:center">Let's Chat</p>
+      <p>38130 Feza Street  Harare  Khayelitsha  7784</p>
+      <p>mnukwainga.com@gmail.com</p>
+      <p>0715339992</p>
+      
+      
+      </p>
+    </div>
+    <div class="card">
+      <h3>Follow Me</h3>
+      <p><a href="https://twitter.com/IMakaziwe?lang=en">twitter</a></br><a href="https://www.instagram.com/inga3223/?hl=en">instagram</a></p>
+    </div>
+    </div>
+  </div>
+</div>
+
+<div class="footer">
+  <h2 style="font-size: 15px">&copy Inga Mnukwa 2019</h2>
+</div>
+<script src="https://www.gstatic.com/firebasejs/6.3.4/firebase-app.js"></script>
+<script src="https://www.gstatic.com/firebasejs/6.3.4/firebase-database.js"></script>
+<script src="main.js"></script>
+</body>
+</html>

@@ -1,0 +1,210 @@
+* {
+    box-sizing: border-box;
+  }
+  /* Style inputs */
+  input[type=text], select, textarea {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    margin-top: 6px;
+    margin-bottom: 16px;
+    resize: vertical;
+  }
+  
+  .alert{
+  display: none;  
+  position: absolute;
+  font-size: 14px;
+  color: #FFFFFF;
+  background:slategrey;
+  margin: -2.6% 6%;
+  padding: 12px 20px;
+  }
+  
+  input[type=submit] {
+    background-color:slategrey;
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    cursor: pointer;
+  }
+  
+  input[type=submit]:hover {
+    background-color:slategrey;
+  }
+  /* Style the container/contact section */
+  .container {
+    border-radius: 5px;
+    background-color: #f2f2f2;
+    padding: 10px;
+  }
+  
+  /* Create two columns that float next to eachother */
+  .column {
+    float: left;
+    width: 50%;
+    margin-top: 6px;
+    padding: 20px;
+  }
+  
+  /* Clear floats after the columns */
+  .row:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+  
+  /* Responsive layout - when the screen is less than 600px wide, make the two columns stack on top of each other instead of next to each other */
+  @media screen and (max-width: 600px) {
+    .column, input[type=submit] {
+      width: 100%;
+      margin-top: 0;
+    }
+  }
+  
+  body {
+    font-family:Arial, Helvetica, sans-serif;
+    padding: 10px;
+    background: #f1f1f1;
+    color: aliceblue;
+  }
+  
+  /* Header/Blog Title */
+  .header {
+    padding: 1px;
+    text-align: left;
+    background: rgb(32, 32, 37);
+  }
+  
+  .header h1 {
+    font-size: 20px;
+    margin-left: 15px;
+    color: aliceblue;
+  }
+  
+  /* Style the top navigation bar */
+  .topnav {
+    overflow: hidden;
+    background-color:rgb(32, 32, 37);
+    position: -webkit-sticky; /* Safari */
+    position: sticky;
+    top: 0;
+  }
+  
+  /* Style the topnav links */
+  .topnav a {
+    float: left;
+    display: block;
+    color: #f2f2f2;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+  }
+  
+  /* Change color on hover */
+  .topnav a:hover {
+    background-color: #ddd;
+    color: black;
+  }
+  
+  /* Create two unequal columns that floats next to each other */
+  /* Left column */
+  .leftcolumn {   
+    float: left;
+    width: 75%;
+  }
+  
+  /* Right column */
+  .rightcolumn {
+    float: left;
+    width: 25%;
+    background-color: #f1f1f1;
+    padding-left: 2px;
+  }
+  
+  img{
+    float:inline-start;
+    border-radius: 1%;
+    margin-left: 0%;
+  }
+  
+  /* Fake image */
+  .fakeimg {
+    /*background-color: #aaa;*/
+    width: 100%;
+    padding: 20px;
+  }
+  
+  /* Add a card effect for articles */
+  .card ,.card1 {
+    background-color:rgb(32, 32, 37);
+    padding: 20px;
+    margin-top: 0px;
+  }
+  
+  /* Clear floats after the columns */
+  .row:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+  
+  /* Footer */
+  .footer {
+    padding: 20px;
+    text-align: center;
+    background: rgb(32, 32, 37);
+    margin-top: 2px;
+  }
+  
+  /* Responsive layout - when the screen is less than 800px wide, make the two columns stack on top of each other instead of next to each other */
+  @media screen and (max-width: 800px) {
+    .leftcolumn, .rightcolumn {   
+      width: 100%;
+      padding: 0;
+    }
+  }
+
+  @media screen and (max-width: 600px) {
+  .card1 h5 {
+    padding-top:unset;
+    padding-top:300px;
+}
+  }
+  
+  /* Responsive layout - when the screen is less than 400px wide, make the navigation links stack on top of each other instead of next to each other */
+  @media screen and (max-width: 400px) {
+    .topnav a, .card1 h5, .card1 h2{
+      float: none;
+      width: 100%;
+    }
+  } 
+  a{
+    color: aliceblue;
+  }
+  
+#Home {
+    height : 25rem;
+    background-image: url('nga.jpg');
+    background-repeat: no-repeat;
+    background-size: 100%;
+    background-position-y: -110px;
+}
+  
+  .card1 h5{
+    top: 230px; 
+    left: 435px; 
+    font-size: 40px;
+    letter-spacing: 2px;
+    font: caption;
+    text-align: center;
+  }
+  
+  .card1 h2 {
+    padding-top: 200px;
+    top: 140px;
+    left: 420px;
+    font-size: 50px;
+    letter-spacing: 4px; font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    text-align: center; 
+  }
