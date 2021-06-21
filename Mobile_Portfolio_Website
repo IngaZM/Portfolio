@@ -1,0 +1,551 @@
+include ':app'
+
+* {
+    box-sizing: border-box;
+  }
+  /* Style inputs */
+  input[type=text], select, textarea {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    margin-top: 6px;
+    margin-bottom: 16px;
+    resize: vertical;
+  }
+
+  div {
+    border: 1px #f1f1f1;
+  }
+
+  .alert{
+  display: none;
+  position: absolute;
+  font-size: 14px;
+  color: #FFFFFF;
+  background:slategrey;
+  margin: -2.6% 6%;
+  padding: 12px 20px;
+  }
+
+  input[type=submit] {
+    background-color:slategrey;
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    cursor: pointer;
+  }
+
+  input[type=submit]:hover {
+    background-color:slategrey;
+  }
+  /* Style the container/contact section */
+  .container {
+    border-radius: 5px;
+    background-color: #f2f2f2;
+    padding: 10px;
+  }
+
+  /* Create two columns that float next to eachother */
+  .column {
+    float: left;
+    width: 50%;
+    margin-top: 6px;
+    padding: 20px;
+  }
+
+  /* Clear floats after the columns */
+  .row:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+
+  /* Responsive layout - when the screen is less than 600px wide, make the two columns stack on top of each other instead of next to each other */
+  @media screen and (max-width: 600px) {
+    .column, input[type=submit] {
+      width: 100%;
+      margin-top: 0;
+    }
+  }
+
+  body {
+    font-family:Arial, Helvetica, sans-serif;
+    padding: 0.5px;
+    background: rgb(32, 32, 37);
+    /* background: #f1f1f1; */
+    color: aliceblue;
+  }
+
+  /* Header/Blog Title */
+  .header {
+    padding: 1px;
+    text-align: left;
+    background: rgb(32, 32, 37);
+  }
+
+  .header h1 {
+    font-size: 20px;
+    margin-left: 15px;
+    color: aliceblue;
+  }
+
+  /* Style the top navigation bar */
+  .topnav {
+    overflow: hidden;
+    background-color:rgb(32, 32, 37);
+    position: -webkit-sticky; /* Safari */
+    position: sticky;
+    top: 0;
+  }
+
+  /* Style the topnav links */
+  .topnav a {
+    float: left;
+    display: block;
+    color: #f2f2f2;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+  }
+
+  /* Change color on hover */
+  .topnav a:hover {
+    background-color: #ddd;
+    color: black;
+  }
+
+  /* Create two unequal columns that floats next to each other */
+  /* Left column */
+  .leftcolumn {
+    float: left;
+    width: 75%;
+  }
+
+  /* Right column */
+  .rightcolumn {
+    float: left;
+    width: 25%;
+    background-color: #f1f1f1;
+    padding-left: 2px;
+  }
+
+  img{
+    float:inline-start;
+    border-radius: 1%;
+    margin-left: 0%;
+  }
+
+  /* Fake image */
+  .fakeimg {
+    /*background-color: #aaa;*/
+    width: 100%;
+    padding: 20px;
+  }
+
+  /* Add a card effect for articles */
+  .card ,.card1 {
+    background-color:rgb(32, 32, 37);
+    padding: 20px;
+    margin-top: 0px;
+  }
+
+  /* Clear floats after the columns */
+  .row:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+
+  /* Footer */
+  .footer {
+    padding: 20px;
+    text-align: center;
+    background: rgb(32, 32, 37);
+    margin-top: 2px;
+  }
+
+  /* Responsive layout - when the screen is less than 800px wide, make the two columns stack on top of each other instead of next to each other */
+  @media screen and (max-width: 800px) {
+    .leftcolumn, .rightcolumn {
+      width: 100%;
+      padding: 0;
+    }
+  }
+
+  @media screen and (max-width: 600px) {
+  .card1 h5 {
+    padding-top:unset;
+    padding-top:300px;
+}
+  }
+
+  /* Responsive layout - when the screen is less than 400px wide, make the navigation links stack on top of each other instead of next to each other */
+  @media screen and (max-width: 400px) {
+    .topnav a, .card1 h5, .card1 h2{
+      float: none;
+      width: 100%;
+    }
+  }
+  a{
+    color: aliceblue;
+  }
+
+#Home {
+    height : 25rem;
+    background-image: url('nga.jpg');
+    background-repeat: no-repeat;
+    background-size: 100%;
+    background-position-y: -110px;
+}
+
+  .card1 h5{
+    top: 230px;
+    left: 435px;
+    font-size: 40px;
+    letter-spacing: 2px;
+    font: caption;
+    text-align: center;
+  }
+
+  .card1 h2 {
+    padding-top: 200px;
+    top: 140px;
+    left: 420px;
+    font-size: 50px;
+    letter-spacing: 4px; font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    text-align: center;
+  }
+
+<?xml version="1.0" encoding="UTF-8"?>
+<module external.linked.project.id="Website2" external.linked.project.path="$MODULE_DIR$" external.root.project.path="$MODULE_DIR$" external.system.id="GRADLE" type="JAVA_MODULE" version="4">
+  <component name="FacetManager">
+    <facet type="java-gradle" name="Java-Gradle">
+      <configuration>
+        <option name="BUILD_FOLDER_PATH" value="$MODULE_DIR$/build" />
+        <option name="BUILDABLE" value="false" />
+      </configuration>
+    </facet>
+  </component>
+  <component name="NewModuleRootManager" LANGUAGE_LEVEL="JDK_1_7" inherit-compiler-output="true">
+    <exclude-output />
+    <content url="file://$MODULE_DIR$">
+      <excludeFolder url="file://$MODULE_DIR$/.gradle" />
+    </content>
+    <orderEntry type="inheritedJdk" />
+    <orderEntry type="sourceFolder" forTests="false" />
+  </component>
+</module>
+# Project-wide Gradle settings.
+# IDE (e.g. Android Studio) users:
+# Gradle settings configured through the IDE *will override*
+# any settings specified in this file.
+# For more details on how to configure your build environment visit
+# http://www.gradle.org/docs/current/userguide/build_environment.html
+# Specifies the JVM arguments used for the daemon process.
+# The setting is particularly useful for tweaking memory settings.
+org.gradle.jvmargs=-Xmx1536m
+# When configured, Gradle will run in incubating parallel mode.
+# This option should only be used with decoupled projects. More details, visit
+# http://www.gradle.org/docs/current/userguide/multi_project_builds.html#sec:decoupled_projects
+# org.gradle.parallel=true
+# AndroidX package structure to make it clearer which packages are bundled with the
+# Android operating system, and which are packaged with your app's APK
+# https://developer.android.com/topic/libraries/support-library/androidx-rn
+android.useAndroidX=true
+# Automatically convert third-party libraries to use AndroidX
+android.enableJetifier=true
+
+
+@if "%DEBUG%" == "" @echo off
+@rem ##########################################################################
+@rem
+@rem  Gradle startup script for Windows
+@rem
+@rem ##########################################################################
+
+@rem Set local scope for the variables with windows NT shell
+if "%OS%"=="Windows_NT" setlocal
+
+set DIRNAME=%~dp0
+if "%DIRNAME%" == "" set DIRNAME=.
+set APP_BASE_NAME=%~n0
+set APP_HOME=%DIRNAME%
+
+@rem Add default JVM options here. You can also use JAVA_OPTS and GRADLE_OPTS to pass JVM options to this script.
+set DEFAULT_JVM_OPTS=
+
+@rem Find java.exe
+if defined JAVA_HOME goto findJavaFromJavaHome
+
+set JAVA_EXE=java.exe
+%JAVA_EXE% -version >NUL 2>&1
+if "%ERRORLEVEL%" == "0" goto init
+
+echo.
+echo ERROR: JAVA_HOME is not set and no 'java' command could be found in your PATH.
+echo.
+echo Please set the JAVA_HOME variable in your environment to match the
+echo location of your Java installation.
+
+goto fail
+
+:findJavaFromJavaHome
+set JAVA_HOME=%JAVA_HOME:"=%
+set JAVA_EXE=%JAVA_HOME%/bin/java.exe
+
+if exist "%JAVA_EXE%" goto init
+
+echo.
+echo ERROR: JAVA_HOME is set to an invalid directory: %JAVA_HOME%
+echo.
+echo Please set the JAVA_HOME variable in your environment to match the
+echo location of your Java installation.
+
+goto fail
+
+:init
+@rem Get command-line arguments, handling Windows variants
+
+if not "%OS%" == "Windows_NT" goto win9xME_args
+
+:win9xME_args
+@rem Slurp the command line arguments.
+set CMD_LINE_ARGS=
+set _SKIP=2
+
+:win9xME_args_slurp
+if "x%~1" == "x" goto execute
+
+set CMD_LINE_ARGS=%*
+
+:execute
+@rem Setup the command line
+
+set CLASSPATH=%APP_HOME%\gradle\wrapper\gradle-wrapper.jar
+
+@rem Execute Gradle
+"%JAVA_EXE%" %DEFAULT_JVM_OPTS% %JAVA_OPTS% %GRADLE_OPTS% "-Dorg.gradle.appname=%APP_BASE_NAME%" -classpath "%CLASSPATH%" org.gradle.wrapper.GradleWrapperMain %CMD_LINE_ARGS%
+
+:end
+@rem End local scope for the variables with windows NT shell
+if "%ERRORLEVEL%"=="0" goto mainEnd
+
+:fail
+rem Set variable GRADLE_EXIT_CONSOLE if you need the _script_ return code instead of
+rem the _cmd.exe /c_ return code!
+if  not "" == "%GRADLE_EXIT_CONSOLE%" exit 1
+exit /b 1
+
+:mainEnd
+if "%OS%"=="Windows_NT" endlocal
+
+:omega
+
+<!DOCTYPE html>
+<html>
+<head>
+   <script src="https://www.google.com/recaptcha/api.js" async defer></script>
+  <link rel="stylesheet" href="
+  style.css">
+</head>
+<body>
+
+<div class="header">
+  <h1 style="font-size: 20">inga mnukwa.</h1>
+</div>
+
+<div class="topnav">
+  <a href="#Hobbies" style="float: right">Hobbies</a>
+  <a href="#Contact" style="float: right">Contact</a>
+  <a href="#Services" style="float:right">Services</a>
+  <a href="#Home" style="float: right">Home</a>
+</div>
+
+<div class="row">
+  <div class="leftcolumn">
+    <div class="card1">
+      <div id="Home">
+      <h2>Hello, I'm Inga</h2>
+      <h5>JUNIOR MOBILE DEVELOPER</h5>
+      <!-- <img src="nga.jpg" alt="Inga" width="100%" padding="20px" height="500px"> -->
+
+
+    </div>
+  </div>
+    <div class="card">
+      <div id="Services">
+      <h2 style="text-align: center; font-size:20px; letter-spacing: 2px">Services</h2>
+      <p style="font-size: 20px;
+      letter-spacing: 2px;
+      text-align: left;">Python</p>
+      <img src="python.jpg" alt="Python Logo" width="100" height="100" float="left" border-radius= "50%" margin-left=20em>
+      <p>Since the early days of my career, I have had a strong passion for Python and believe it is what I do best. If this is something you need, please do not hesitate to get in touch to discuss your next plan or project.</p>
+      <p style="font-size: 20px;
+      letter-spacing: 2px;
+      text-align: left;">Delphi</p>
+      <img src="delphi.png" alt="Delphi Logo" width="100" height="100" float="left" border-radius="50%" margin-left=40em>
+      <p>In high school I did Delphi.</br>Delphi is both an object oriented programming language (OOP) and an Integrated Development Environment (IDE). Published by the Embarcadero company (formerly CodeGear and more formerly Borland), Delphi is an alternative to language such as Visual Basic offering development with both rapidity and good quality.</p>
+      <p style="font-size: 20px;
+      letter-spacing: 2px;
+      text-align: left;">Java</p>
+      <img src="java.png" alt="Java Logo" width="100" height="100" float="left" border-radius="50%" margin-left=40em>
+      <p>Earlier this year I was introduced to Java. I currently know the basics but I am working forward to learning more about it.</br>Java is a general-purpose programming language that is class-based, object-oriented, and designed to have as few implementation dependencies as possible.</p>
+      <p>I am passionate about building applications and developing websites.</br>I am currently busy with my NSC Systems Development Level 5. I am now an Intern at</br>Absa in a YoungLings project.</p>
+    </div>
+  </div>
+<div class="card">
+  <div id="Hobbies">
+    <h2 style="text-align: center; font-size:20px; letter-spacing: 2px">Hobbies</h2>
+    <p>If I am not coding, you will find me reading a book or watching documentaries.</p>
+    <p>I also enjoy:</br>-swimming</br>-playing table tennis</br>-browsing the internet</p>
+  </div>
+</div>
+</div>
+  <div class="rightcolumn">
+    <div class="card">
+      <div id="Contact">
+      <h2 style="font-size: 20px">Contact</h2>
+      <form  id= "IngasForm" action="?" method="POST" onsubmit="return recaptcha_callback()">
+        <label for="fname">First Name</label>
+        <input type="text" id="fname" name="firstname" placeholder="Your name.." required>
+        <label for="lname">Last Name</label>
+        <input type="text" id="lname" name="lastname" placeholder="Your last name.." required>
+        <label for="country">Country</label>
+        <select id="country" name="country">
+          <option value="australia">South Africa</option>
+          <option value="canada">Canada</option>
+          <option value="usa">USA</option>
+        </select>
+        <label for="subject">Subject</label>
+        <textarea id="subject" name="subject" placeholder="Write something.." style="height:170px" required></textarea>
+        <br>
+        <div class="g-recaptcha" data-sitekey="6LcOYbEUAAAAAAqngQ2tdaZ86Fu7llgxFszXF04T" data-callback ="recaptcha_callback"></div>
+      <br/>
+        <input type="submit" value="Submit" id="submit" disabled>
+        <div class="alert">
+          MESSAGE SENT
+        </div>
+      </form>
+
+      <p style="font-size: 30px; font-family:'Times New Roman', Times, serif; text-align:center">Let's Chat</p>
+      <p>38130 Feza Street  Harare  Khayelitsha  7784</p>
+      <p>mnukwainga.com@gmail.com</p>
+      <p>0715339992</p>
+
+
+      </p>
+    </div>
+    <div class="card">
+      <h3>Follow Me</h3>
+      <p><a href="https://twitter.com/IMakaziwe">twitter</a></br><a href="https://www.instagram.com/inga3223/?hl=en">instagram</a></p>
+    </div>
+    </div>
+  </div>
+</div>
+
+<div class="footer">
+  <h2 style="font-size: 15px">&copy Inga Mnukwa 2019</h2>
+</div>
+<script src="https://www.gstatic.com/firebasejs/6.3.4/firebase-app.js"></script>
+<script src="https://www.gstatic.com/firebasejs/6.3.4/firebase-database.js"></script>
+<script src="main.js"></script>
+</body>
+</html>
+
+## This file is automatically generated by Android Studio.
+# Do not modify this file -- YOUR CHANGES WILL BE ERASED!
+#
+# This file should *NOT* be checked into Version Control Systems,
+# as it contains information specific to your local configuration.
+#
+# Location of the SDK. This is only used by Gradle.
+# For customization when using a Version Control System, please read the
+# header note.
+sdk.dir=C\:\\Users\\Inga\\AppData\\Local\\Android\\Sdk
+
+// Your web app's Firebase configuration
+var firebaseConfig = {
+    apiKey: "AIzaSyCL-gVCYrXb9Yu8Rbv6ZhtPOKfnBHD-uE4",
+    authDomain: "ingamnukwaportfolio.firebaseapp.com",
+    databaseURL: "https://ingamnukwaportfolio.firebaseio.com",
+    projectId: "ingamnukwaportfolio",
+    storageBucket: "",
+    messagingSenderId: "276392278030",
+    appId: "1:276392278030:web:751a95271da9f43e"
+  };
+  // Initialize Firebase
+  firebase.initializeApp(firebaseConfig);
+  
+//Reference messages collection
+var messagesRef = firebase.database().ref("messages")
+
+
+// Listen for form submit 
+		document.getElementById('IngasForm').addEventListener('submit', submitForm);
+
+
+// submit form 
+		function submitForm(e){
+			e.preventDefault();
+			
+	
+//Get values
+
+	 	var fname = getInputVal('fname');
+         var lname = getInputVal('lname');
+         var country = getInputVal('country');
+         var subject = getInputVal('subject');
+
+// Save message 	
+ 		saveMessage(fname, lname, country, subject)
+
+  
+ 		// Show alert
+  document.querySelector('.alert').style.display = 'block';
+
+  // Hide alert after 3 seconds
+  setTimeout(function(){
+    document.querySelector('.alert').style.display = 'none';
+  },3000);
+
+
+ // Clear form
+  document.getElementById('IngasForm').reset();
+}
+
+
+//Function to get form values
+		function getInputVal(id){
+			return document.getElementById(id).value;
+
+	}
+
+
+
+// Save message to firebase
+		function saveMessage(fname, lname, country, subject){
+			var newMessageRef = messagesRef.push();
+			newMessageRef.set({
+				fname: fname,
+                lname: lname,
+                country: country,
+				subject:subject,
+
+			});
+         }
+         
+         function recaptcha_callback() {
+             var submitbutton = document.querySelector("#submit");
+             submitbutton.removeAttribute("disabled");
+             submitbutton.getElementsByClassName.cursor = "pointer";
+
+
+         }
+
+        // Recaptcha function
+
+        ducument.getElementById("submit").disabled = true
+        function recaptcha_callback(){
+            document.getElementById("submit").disabled = false
+        }
+         
